@@ -1,0 +1,75 @@
+body{
+    background-color: black;
+}
+
+.main-container{
+    position: absolute;
+    top: -20%;
+    width: 100%;
+    height: 100%;
+}
+
+.text-main-image{
+    position: absolute;
+    top: 38vw;
+    left: 20%;
+    color: gold;
+    width: 25%;
+    min-width: 350px;
+    font-size: calc(100vw / 50);
+    letter-spacing: 1.2px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box-shadow{
+    position: absolute;
+    top:0px;
+    height: 120%;
+    width: 100%;
+    box-shadow: inset 20px 0px 180px 250px #000000;
+    z-index: 10;
+}
+
+.content{
+    position: absolute;
+    top: 120%;
+    width: 100%;
+    height: 1000px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.7987570028011204) 100%);
+}
+
+.navbar-hang{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 11;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%);
+}
+
+
+.nav-item{
+    margin-top: 60%;
+    margin-bottom: 60%;
+}
+
+.people2-box{
+    width: 100%;
+    height:auto;
+    /* padding-left: 10%; */
+}
+
+.stats2-box{
+    height:auto;
+    width: auto;
+    max-width:100%;
+}
+
+.content-box{
+    height: 80vh;
+}
+
+.txt-g{color: gold;}
+.fs-28{font-size: 28px;}
+.pt-120{padding-top: 120px;}
