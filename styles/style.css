@@ -1,5 +1,6 @@
 body{
     background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .main-container{
@@ -40,7 +41,9 @@ body{
 }
 
 .navbar-hang{
+    font-size: 16px;
     position: fixed;
+    max-width: 5%;
     top: 0px;
     left: 0px;
     height: 100%;
@@ -57,19 +60,47 @@ body{
 .people2-box{
     width: 100%;
     height:auto;
-    /* padding-left: 10%; */
-}
-
-.stats2-box{
-    height:auto;
-    width: auto;
-    max-width:100%;
 }
 
 .content-box{
-    height: 80vh;
+    height: 70vh;
+    margin-bottom:10%;
 }
 
 .txt-g{color: gold;}
 .fs-28{font-size: 28px;}
 .pt-120{padding-top: 120px;}
+
+.card{
+    border-radius: 300px;
+    width: 150px;
+    height: 150px;
+    background: rgb(0,107,252);
+background: radial-gradient(circle, rgba(0,107,252,1) 0%, rgba(0,0,0,1) 78%, rgba(0,0,0,1) 100%);}
+
+.card-img-top{
+    width: 50px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.row{
+    margin-right: 0px;
+}
+
+.v-img{
+    height: 70vh;
+}
+
+.m--top{margin-top: -5%;}
+.z-top{z-index: 1000;}
+
+footer{
+    text-align: center;
+    width: 100%;
+}
+
+.page-footer .row{
+    height: 80px;
+    font-size: 30px;
+}
