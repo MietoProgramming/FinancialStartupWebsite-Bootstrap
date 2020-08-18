@@ -26,6 +26,7 @@ body{
     position: absolute;
     top:0px;
     height: 120%;
+    min-height: 1000px;
     width: 100%;
     box-shadow: inset 20px 0px 180px 250px #000000;
     z-index: 10;
@@ -41,20 +42,16 @@ body{
 }
 
 .navbar-hang{
+    list-style-type: none;
+    padding-left: 5px;
     font-size: 16px;
     position: fixed;
-    max-width: 5%;
+    max-width: 8%;
     top: 0px;
     left: 0px;
-    height: 100%;
+    height: 100vh;
     z-index: 11;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 100%);
-}
-
-
-.nav-item{
-    margin-top: 60%;
-    margin-bottom: 60%;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.2) 100%);
 }
 
 .people2-box{
@@ -89,7 +86,11 @@ background: radial-gradient(circle, rgba(0,107,252,1) 0%, rgba(0,0,0,1) 78%, rgb
 }
 
 .v-img{
-    height: 70vh;
+    height: auto;
+    width: auto;
+    max-width: 700px;
+    max-height: 80vh;
+    /* padding-top: 20%; */
 }
 
 .m--top{margin-top: -5%;}
@@ -103,4 +104,44 @@ footer{
 .page-footer .row{
     height: 80px;
     font-size: 30px;
+}
+
+@media only screen and (max-width: 1300px){
+    .fs-28{font-size: 24px;}
+    .v-img{
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .fs-28{font-size: 20px;}
+    .v-img{
+        max-width: 40vw;
+    }
+    .pt-120{padding-top: 20px;}
+    .main-container{
+        max-height: 500px;
+        height: 500px;
+        top: 0%;
+        overscroll-behavior-x: hidden;
+    }
+    .box-shadow{
+        min-height: 300px;
+        max-height: 420px;
+        box-shadow: inset 20px 0px 180px 250px rgba(0,0,0,0.6);
+    }
+    .content{
+        top: 50%;
+    }
+    .navbar-hang{
+        display: none;
+    }
+
+    .nav-link{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .fs-28{font-size: 14px;}
 }
